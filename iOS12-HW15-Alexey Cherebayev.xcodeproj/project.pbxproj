@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		FADB35D02BA4105300E30FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB35CF2BA4105300E30FB2 /* AppDelegate.swift */; };
 		FADB35D22BA4105300E30FB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB35D12BA4105300E30FB2 /* SceneDelegate.swift */; };
-		FADB35D42BA4105300E30FB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB35D32BA4105300E30FB2 /* ViewController.swift */; };
-		FADB35D72BA4105300E30FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB35D52BA4105300E30FB2 /* Main.storyboard */; };
+		FADB35D42BA4105300E30FB2 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB35D32BA4105300E30FB2 /* SettingsController.swift */; };
 		FADB35D92BA4105500E30FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB35D82BA4105500E30FB2 /* Assets.xcassets */; };
 		FADB35DC2BA4105500E30FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB35DA2BA4105500E30FB2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		FADB35CC2BA4105300E30FB2 /* iOS12-HW15-Alexey Cherebayev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS12-HW15-Alexey Cherebayev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB35CF2BA4105300E30FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADB35D12BA4105300E30FB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FADB35D32BA4105300E30FB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FADB35D62BA4105300E30FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADB35D32BA4105300E30FB2 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		FADB35D82BA4105500E30FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADB35DB2BA4105500E30FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADB35DD2BA4105500E30FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		FADB35CE2BA4105300E30FB2 /* iOS12-HW15-Alexey Cherebayev */ = {
 			isa = PBXGroup;
 			children = (
+				FADB35E32BA4112400E30FB2 /* App */,
+				FADB35E52BA4114000E30FB2 /* Sources */,
+				FADB35E42BA4112E00E30FB2 /* Resources */,
+			);
+			path = "iOS12-HW15-Alexey Cherebayev";
+			sourceTree = "<group>";
+		};
+		FADB35E32BA4112400E30FB2 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				FADB35CF2BA4105300E30FB2 /* AppDelegate.swift */,
 				FADB35D12BA4105300E30FB2 /* SceneDelegate.swift */,
-				FADB35D32BA4105300E30FB2 /* ViewController.swift */,
-				FADB35D52BA4105300E30FB2 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FADB35E42BA4112E00E30FB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FADB35D82BA4105500E30FB2 /* Assets.xcassets */,
 				FADB35DA2BA4105500E30FB2 /* LaunchScreen.storyboard */,
 				FADB35DD2BA4105500E30FB2 /* Info.plist */,
 			);
-			path = "iOS12-HW15-Alexey Cherebayev";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FADB35E52BA4114000E30FB2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FADB35E62BA4114800E30FB2 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FADB35E62BA4114800E30FB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FADB35D32BA4105300E30FB2 /* SettingsController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +156,6 @@
 			files = (
 				FADB35DC2BA4105500E30FB2 /* LaunchScreen.storyboard in Resources */,
 				FADB35D92BA4105500E30FB2 /* Assets.xcassets in Resources */,
-				FADB35D72BA4105300E30FB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADB35D42BA4105300E30FB2 /* ViewController.swift in Sources */,
+				FADB35D42BA4105300E30FB2 /* SettingsController.swift in Sources */,
 				FADB35D02BA4105300E30FB2 /* AppDelegate.swift in Sources */,
 				FADB35D22BA4105300E30FB2 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FADB35D52BA4105300E30FB2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FADB35D62BA4105300E30FB2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FADB35DA2BA4105500E30FB2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,10 +314,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4EE9JPLE3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW15-Alexey Cherebayev/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW15-Alexey Cherebayev/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +342,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4EE9JPLE3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW15-Alexey Cherebayev/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW15-Alexey Cherebayev/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
