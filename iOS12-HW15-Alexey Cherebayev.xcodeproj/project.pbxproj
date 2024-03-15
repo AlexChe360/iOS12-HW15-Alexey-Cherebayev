@@ -12,6 +12,7 @@
 		FADB35D42BA4105300E30FB2 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB35D32BA4105300E30FB2 /* SettingsController.swift */; };
 		FADB35D92BA4105500E30FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB35D82BA4105500E30FB2 /* Assets.xcassets */; };
 		FADB35DC2BA4105500E30FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB35DA2BA4105500E30FB2 /* LaunchScreen.storyboard */; };
+		FADB35E92BA4134600E30FB2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB35E82BA4134600E30FB2 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FADB35D82BA4105500E30FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADB35DB2BA4105500E30FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADB35DD2BA4105500E30FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADB35E82BA4134600E30FB2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		FADB35E52BA4114000E30FB2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FADB35E72BA4133200E30FB2 /* Model */,
 				FADB35E62BA4114800E30FB2 /* Controllers */,
 			);
 			path = Sources;
@@ -94,6 +97,14 @@
 				FADB35D32BA4105300E30FB2 /* SettingsController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FADB35E72BA4133200E30FB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADB35E82BA4134600E30FB2 /* Settings.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			files = (
 				FADB35D42BA4105300E30FB2 /* SettingsController.swift in Sources */,
 				FADB35D02BA4105300E30FB2 /* AppDelegate.swift in Sources */,
+				FADB35E92BA4134600E30FB2 /* Settings.swift in Sources */,
 				FADB35D22BA4105300E30FB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
